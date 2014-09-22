@@ -2,7 +2,7 @@ package MainPackage;
 
 import java.util.ArrayList;
 
-public class Play extends CoryHand {
+public class Play extends Hand {
 	public static void main(String[] args){
 	Deck deck = new Deck();
 	ArrayList<String> unshuffled = deck.newDeck();
@@ -12,6 +12,6 @@ public class Play extends CoryHand {
 	System.out.println(hand1);
 	System.out.println(hand2);
 	System.out.println("what");
-	//System.out.println(Deck.cards_remaining(shuffled_deck));
+	System.out.println(Deck.cards_remaining(shuffled_deck));
 	}
 }

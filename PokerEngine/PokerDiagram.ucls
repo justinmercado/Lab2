@@ -3,62 +3,49 @@
   associations="true" dependencies="false" nesting-relationships="true">  
   <class id="1" language="java" name="MainPackage.Card" project="PokerEngine" 
     file="/PokerEngine/src/MainPackage/Card.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="111" x="86" y="75"/>    
+    <position height="117" width="111" x="41" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="MainPackage.Play" project="PokerEngine" 
-    file="/PokerEngine/src/MainPackage/Play.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="242" y="780"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="MainPackage.Deck" project="PokerEngine" 
+  <class id="2" language="java" name="MainPackage.Deck" project="PokerEngine" 
     file="/PokerEngine/src/MainPackage/Deck.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="171" width="269" x="86" y="232"/>    
+    <position height="171" width="269" x="41" y="194"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="MainPackage.Hand" project="PokerEngine" 
+  <class id="3" language="java" name="MainPackage.Hand" project="PokerEngine" 
     file="/PokerEngine/src/MainPackage/Hand.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="87" x="268" y="443"/>    
+    <position height="315" width="214" x="41" y="405"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="MainPackage.CoryHand" project="PokerEngine" 
-    file="/PokerEngine/src/MainPackage/CoryHand.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="214" x="14" y="443"/>    
+  <class id="4" language="java" name="MainPackage.Play" project="PokerEngine" 
+    file="/PokerEngine/src/MainPackage/Play.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="41" y="760"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
       visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <generalization id="6">    
+  <generalization id="5">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="4"/>  
-  </generalization>  
-  <generalization id="7">    
-    <end type="SOURCE" refId="3"/>    
     <end type="TARGET" refId="1"/>  
   </generalization>  
-  <generalization id="8">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="3"/>  
+  <generalization id="6">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
   </generalization>  
-  <generalization id="9">    
+  <generalization id="7">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="3"/>  
   </generalization>  
