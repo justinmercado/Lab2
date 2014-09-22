@@ -150,10 +150,10 @@ public class CoryHand extends Deck {
 			}
 			
 			//Checks if Hand is a Full House	
-			public static boolean FullHouse(Card[] hand) {
+			public static boolean FullHouse(Integer[] rank) {
 				int sum = 0;
 				
-				Arrays.sort(hand);
+				Arrays.sort(rank);
 				
 				// Checks if 1-3 cards are the same
 				for(int i=0; i < 3; i++){
@@ -236,4 +236,54 @@ public class CoryHand extends Deck {
 
 			//NEED OVERLOAD TO JUDGE MULTIPLE HANDS
 			
+			public static int Score(String[] hand1){
+				int score= 0;
+				String[] suit = handEvalSuit(hand1);
+				Integer[] rank = handEvalRank(hand1);
+				
+				if(RoyalFlush(suit, rank) == true) {
+					score += 8;
+				}
+				if(StraightFlush(suit, rank) == true) {
+					score += 7;
+				}
+				if(FourKind(suit) == true) {
+					score += 6;
+				}
+				if(FullHouse(rank) == true) {
+					score += 5;
+				}
+				if(Flush(suit) == true) {
+					score += 4;
+				}
+				if(Straight(rank) == true) {
+					score += 3;
+				}
+				if(ThreeKind(suit) == true) {
+					score += 2;
+				}
+				if(OnePair(rank) == true) {
+					score += 1;
+				}
+				else{
+					score += 0;
+				}
+				
+				return score;
 			}
+			
+			// Finds winner of different hands
+			public static String[] overload(String[] hand1, String[] hand2){
+				if (Score(hand1) > Score(hand2)){
+					return hand1;
+				}
+				else {
+					return hand2;
+				}
+			
+			}
+}
+			
+			
+			
+			
