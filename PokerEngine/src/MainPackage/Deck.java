@@ -69,8 +69,8 @@ public class Deck extends Card  {
 		return hand;
 	}
 
-	private void cards_remaining(ArrayList<Integer> newDeck){
-		System.out.println("There are " + newDeck.size() + "cards remaining");
+	protected static int cards_remaining(ArrayList<String> newDeck){
+		return newDeck.size();
 	}
 }
 

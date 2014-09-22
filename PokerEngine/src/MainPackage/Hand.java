@@ -1,13 +1,14 @@
 package MainPackage;
 
+/*
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
-
+*/
 
 public class Hand extends Deck{
 	
-	Deck hand1 = new Deck();
+/*	Deck hand1 = new Deck();
 	Deck hand2 = new Deck();
 	
 		
@@ -228,6 +229,7 @@ public class Hand extends Deck{
 			return hand2;
 		}
 	}
+	*/
 	}
 
 

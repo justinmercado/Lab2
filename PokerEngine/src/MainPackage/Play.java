@@ -9,7 +9,9 @@ public class Play extends Hand {
 	ArrayList<String> shuffled_deck = deck.deckShuffler(unshuffled);
 	String[] hand1 = deck.hand(shuffled_deck);
 	String[] hand2 = deck.hand(shuffled_deck);
-		
-	
+	System.out.println(hand1);
+	System.out.println(hand2);
+	System.out.println("what");
+	System.out.println(Deck.cards_remaining(shuffled_deck));
 	}
 }

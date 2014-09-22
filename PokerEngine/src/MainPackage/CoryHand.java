@@ -1,7 +1,5 @@
 package MainPackage;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -14,7 +12,7 @@ public class CoryHand extends Deck {
 	(you pass in array of hands, it passes back the winner).
 	*/
 
-	
+/*	
 	protected static void handScores(){
 		Integer royalFlush = 10;
 		Integer straightFlush = 9;
@@ -28,6 +26,7 @@ public class CoryHand extends Deck {
 		Integer highCard = 1;
 									
 	}
+	*/
 	//*******************THIS IS THE SEPERATOR*************
 	protected static String[] handEvalSuit(String[] hand){
 		String[] suits = new String[5];
@@ -151,18 +150,33 @@ public class CoryHand extends Deck {
 			}
 			
 			//Checks if Hand is a Full House	
-			public static boolean FullHouse(String[] rank) {
+			public static boolean FullHouse(Card[] hand) {
 				int sum = 0;
 				
-				Arrays.sort(rank);
+				Arrays.sort(hand);
 				
-				if (rank[1] = rank[2] = rank[3]) && (rank[4] == rank[5]) {
+				// Checks if 1-3 cards are the same
+				for(int i=0; i < 3; i++){
+					if(rank[i] == rank[i+1]){
+						sum+=1;
+					}
+				}
+				
+				// Checks if 4-5 cards are the same
+				for(int i=4; i < 5; i++){
+					if(rank[i] == rank[i+1]){
+						sum+=1;
+					}
+				}
+				
+				if (sum == 5) {
 					return true;
 				}
 				else {
 					return false;
 				}
 			}
+
 
 			//Checks if Hand is Four of a Kind
 			public static boolean FourKind(String[] rank) {

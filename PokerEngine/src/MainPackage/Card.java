@@ -5,8 +5,8 @@ public class Card {
 	protected static String suit[] = { "H", "S", "C", "D" };
 
 	public Card(int[] rank, String[] suit) {
-		this.rank = rank;
-		this.suit = suit;
+		Card.rank = rank;
+		Card.suit = suit;
 	}
 
 }
