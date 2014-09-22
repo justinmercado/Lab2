@@ -1,5 +1,4 @@
 package MainPackage;
-	
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -12,14 +11,14 @@ public class Deck extends Card  {
 	}
 
 	/*
-	 * A deck is an object.
-Ã¯	Each deck (you could have multiple decks, depending on the game) 
+	 * A “deck” is an object.
+•	Each deck (you could have multiple decks, depending on the game) 
 	is an array of cards.
-Ã¯	When you instantiate a deck, you should build the array list of cards.  
-	You should also shuffle the deck (make the order of cards random).
-Ã¯	A method is needed that will be to draw from the deck 
-	(return next cardÃ– assuming deck is shuffled).
-Ã¯	Build a method to denote how many cards are remaining to be drawn.
+•	When you instantiate a deck, you should build the array list of cards.  
+	You should also “shuffle” the deck (make the order of cards random).
+•	A method is needed that will be to “draw” from the deck 
+	(return next card… assuming deck is shuffled).
+•	Build a method to denote how many cards are remaining to be drawn.
 
 	 * 
 	 * 
