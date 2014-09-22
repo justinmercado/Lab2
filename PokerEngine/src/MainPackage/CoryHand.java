@@ -156,7 +156,7 @@ public class CoryHand extends Deck {
 				
 				Arrays.sort(rank);
 				
-				if (rank[1] = rank[2] = rank[3] && rank[4] = rank[5]) {
+				if (rank[1] = rank[2] = rank[3]) && (rank[4] == rank[5]) {
 					return true;
 				}
 				else {
